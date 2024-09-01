@@ -1,0 +1,56 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.h-screen-hack {
+  height: calc(100vh - 64px);
+}
+@media (min-width: 600px) {
+  .h-screen-hack {
+    height: calc(100vh - 64px);
+  }
+}
+
+@media (min-width: 0px) {
+  @media (orientation: landscape) {
+    .h-screen-hack {
+      height: calc(100vh - 48px);
+    }
+  }
+}
+
+/* Base button styles */
+.btn {
+  @apply rounded-lg transition duration-300 ease-in-out focus:outline-none;
+  @apply md:text-base text-sm;
+  @apply p-1 md:py-2 md:px-3;
+}
+
+/* Primary variant */
+.btn-primary {
+  @apply bg-gray-700 text-white shadow-md hover:bg-blue-600 focus:ring-gray-700;
+}
+
+/* Outlined variant */
+.btn-outlined {
+  @apply border border-black bg-transparent shadow-none;
+}
+
+.border-gradient {
+  position: relative;
+}
+
+.border-gradient::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 6px;
+  padding: 10px;
+  border: 1px solid transparent;
+  background: linear-gradient(180deg, #a259ff 0%, #613599 100%) border-box;
+  -webkit-mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
