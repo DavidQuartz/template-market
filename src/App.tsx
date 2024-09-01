@@ -13,7 +13,7 @@ function App() {
       <Suspense fallback={<div>Loading...</div>}>
         <Routes>
           <Route
-            path="/dashboard/*"
+            path="/*"
             Component={(props) => (
               <DashboardRoute component={Dashboard} {...props} />
             )}

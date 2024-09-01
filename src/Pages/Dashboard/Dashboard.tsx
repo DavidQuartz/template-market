@@ -3,7 +3,7 @@ import DashboardHome from './DashboardHome';
 import useMatchPath from '../../hooks/useMatchPath';
 
 const Dashboard = ({ ...props }) => {
-  const isDashboardHomePath = useMatchPath('/dashboard');
+  const isDashboardHomePath = useMatchPath('/');
 
   return isDashboardHomePath ? <DashboardHome /> : <Outlet {...props} />;
 };

@@ -35,28 +35,16 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
         <DashboardSidebar headerHeight={headerHeight}>
           <DashboardNavigation className="space-y-6">
             <div className="space-y-3 px-3">
-              <DashboardNavigation
-                item
-                href={'/dashboard/inspiration'}
-                icon={compass}
-              >
+              <DashboardNavigation item href={'/inspiration'} icon={compass}>
                 Inspiration
               </DashboardNavigation>
-              <DashboardNavigation
-                item
-                href={'/dashboard/templates'}
-                icon={template}
-              >
+              <DashboardNavigation item href={'/templates'} icon={template}>
                 Templates
               </DashboardNavigation>
-              <DashboardNavigation
-                item
-                href={'/dashboard/collections'}
-                icon={collection}
-              >
+              <DashboardNavigation item href={'/collections'} icon={collection}>
                 Collections
               </DashboardNavigation>
-              <DashboardNavigation item href="/dashboard/brands" icon={brands}>
+              <DashboardNavigation item href="/brands" icon={brands}>
                 Brands
               </DashboardNavigation>
             </div>
@@ -71,10 +59,10 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
                 >
                   Hidden gems <LockedFeature />
                 </DashboardNavigation>
-                <DashboardNavigation item href="/dashboard/evergreen-ads">
+                <DashboardNavigation item href="/evergreen-ads">
                   Evergreen ads <LockedFeature />
                 </DashboardNavigation>
-                <DashboardNavigation item href="/dashboard/testing-lab">
+                <DashboardNavigation item href="/testing-lab">
                   Testing lab <LockedFeature />
                 </DashboardNavigation>
               </div>
@@ -86,7 +74,7 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
                 <DashboardNavigation item href={`/dashboard/`}>
                   All Saved{' '}
                 </DashboardNavigation>
-                <DashboardNavigation item href="/dashboard/untitled-board-1">
+                <DashboardNavigation item href="/untitled-board-1">
                   <div className="flex items-center justfy-end gap-5 w-full">
                     Board name{' '}
                     <DotsHorizontal
@@ -95,7 +83,7 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
                     />
                   </div>
                 </DashboardNavigation>
-                <DashboardNavigation item href="/dashboard/untitled-board-2">
+                <DashboardNavigation item href="/untitled-board-2">
                   <div className="flex items-center justfy-end gap-5 w-full">
                     Board name{' '}
                     <DotsHorizontal
@@ -104,7 +92,7 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
                     />
                   </div>
                 </DashboardNavigation>
-                <DashboardNavigation item href="/dashboard/untitled-board-3">
+                <DashboardNavigation item href="/untitled-board-3">
                   <div className="flex items-center justfy-end gap-5 w-full">
                     Board name{' '}
                     <DotsHorizontal
@@ -113,7 +101,7 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
                     />
                   </div>
                 </DashboardNavigation>
-                <DashboardNavigation item href="/dashboard/untitled-board-4">
+                <DashboardNavigation item href="/untitled-board-4">
                   <div className="flex items-center justfy-end gap-5 w-full">
                     Board name{' '}
                     <DotsHorizontal
@@ -122,7 +110,7 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
                     />
                   </div>
                 </DashboardNavigation>
-                <DashboardNavigation item href="/dashboard/untitled-board-5">
+                <DashboardNavigation item href="/untitled-board-5">
                   <div className="flex items-center justfy-end gap-5 w-full">
                     Board name{' '}
                     <DotsHorizontal
@@ -136,13 +124,13 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
             </div>
             <hr />
             <div className="px-3">
-              <DashboardNavigation item href="/dashboard/settings">
+              <DashboardNavigation item href="/settings">
                 Settings
               </DashboardNavigation>
-              <DashboardNavigation item href="/dashboard/help-and-feedback">
+              <DashboardNavigation item href="/help-and-feedback">
                 Help & Feedback
               </DashboardNavigation>
-              <DashboardNavigation item href="/dashboard/join-slack">
+              <DashboardNavigation item href="/join-slack">
                 Join the CreativeOS Slack
               </DashboardNavigation>
               <div className="space-y-4">

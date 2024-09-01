@@ -18,7 +18,7 @@ const BrandsPage = () => {
             <Button
               variant="outlined"
               component={Link}
-              to="/dashboard/brands"
+              to="/brands"
               role="button"
             >
               Back
@@ -39,9 +39,7 @@ const BrandsPage = () => {
               to="templates"
               role="button"
               className={clsx('inline-flex items-center', {
-                'bg-custom-gradient text-white': isActive(
-                  '/dashboard/brands/templates',
-                ),
+                'bg-custom-gradient text-white': isActive('/brands/templates'),
               })}
             >
               Templates
@@ -57,9 +55,7 @@ const BrandsPage = () => {
                 'inline-flex items-center',
                 'inline-flex items-center',
                 {
-                  'bg-custom-gradient text-white': isActive(
-                    '/dashboard/brands/email',
-                  ),
+                  'bg-custom-gradient text-white': isActive('/brands/email'),
                 },
               )}
             >
@@ -76,9 +72,7 @@ const BrandsPage = () => {
               to="landers"
               role="button"
               className={clsx('inline-flex items-center', {
-                'bg-custom-gradient text-white': isActive(
-                  '/dashboard/brands/landers',
-                ),
+                'bg-custom-gradient text-white': isActive('/brands/landers'),
               })}
             >
               <div className="flex items-center gap-2">
@@ -94,9 +88,7 @@ const BrandsPage = () => {
               to="funnels"
               role="button"
               className={clsx('inline-flex items-center', {
-                'bg-custom-gradient text-white': isActive(
-                  '/dashboard/brands/funnels',
-                ),
+                'bg-custom-gradient text-white': isActive('/brands/funnels'),
               })}
             >
               <div className="flex items-center gap-2">
