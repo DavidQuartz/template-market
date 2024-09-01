@@ -4,6 +4,10 @@ import { DashboardContent } from '../../layout/dashboard';
 import { useLocation, Link, Outlet } from 'react-router-dom';
 import clsx from 'clsx';
 import LockedFeature from '../../components/locked-feature/LockedFeature';
+import email from '/images/icons/email.svg';
+import landers from '/images/icons/landers.svg';
+import landersW from '/images/icons/landers-white.svg';
+import templates from '/images/icons/templates.svg';
 
 const BrandsPage = () => {
   const location = useLocation();
@@ -42,7 +46,12 @@ const BrandsPage = () => {
                 'bg-custom-gradient text-white': isActive('/brands/templates'),
               })}
             >
-              Templates
+              <div className="flex items-center gap-2">
+                <div>
+                  <img src={templates} />
+                </div>
+                <SimpleText>Templates</SimpleText>
+              </div>
             </Button>
           </div>
           <div>
@@ -60,6 +69,9 @@ const BrandsPage = () => {
               )}
             >
               <div className="flex items-center gap-2">
+                <div className="mr-3">
+                  <img src={email} />
+                </div>
                 <SimpleText>Email</SimpleText>
                 <LockedFeature />
               </div>
@@ -76,6 +88,9 @@ const BrandsPage = () => {
               })}
             >
               <div className="flex items-center gap-2">
+                <div className="mr-3">
+                  <img src={isActive('/brands/landers') ? landersW : landers} />
+                </div>
                 <SimpleText>Landers</SimpleText>
                 <LockedFeature />
               </div>
@@ -92,6 +107,9 @@ const BrandsPage = () => {
               })}
             >
               <div className="flex items-center gap-2">
+                <div className="mr-3">
+                  <img src={isActive('/brands/funnels') ? landersW : landers} />
+                </div>
                 <SimpleText>Funnels</SimpleText>
                 <LockedFeature />
               </div>
