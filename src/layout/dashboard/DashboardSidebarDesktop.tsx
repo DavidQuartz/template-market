@@ -10,11 +10,11 @@ const DashboardSidebarDesktop: FC<DashboardSidebarDesktopProps> = ({
   headerHeight,
 }) => (
   <div
-    className="hidden md:flex md:shrink-0 h-screen border"
+    className="hidden md:flex md:shrink-0 border"
     style={{ height: `calc(100vh - ${headerHeight})` }}
   >
     <div className="flex flex-col w-64 bg-customGray">
-      <div className="flex-grow overflow-y-auto pb-3">{children}</div>
+      <div className="flex-grow overflow-y-auto pb-3 h-screen">{children}</div>
     </div>
   </div>
 );

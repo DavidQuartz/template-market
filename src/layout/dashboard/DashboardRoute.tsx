@@ -44,7 +44,7 @@ const DashboardRoute: FC<DashboardRouteProps> = ({
               <DashboardNavigation item href={'/collections'} icon={collection}>
                 Collections
               </DashboardNavigation>
-              <DashboardNavigation item href="/brands" icon={brands}>
+              <DashboardNavigation item href="/brands/funnels" icon={brands}>
                 Brands
               </DashboardNavigation>
             </div>
